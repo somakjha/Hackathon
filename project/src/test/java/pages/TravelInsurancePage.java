@@ -8,6 +8,10 @@ public class TravelInsurancePage {
 	
 	public TravelInsurancePage(WebDriver driver)
 	{
-		this.driver = driver;
+		TravelInsurancePage.driver = driver;
+	}
+	
+	public void test() {
+		System.out.println("lets go buddy");
 	}
 }

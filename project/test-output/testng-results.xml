@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-08T20:18:54 IST" name="Default suite" finished-at="2022-07-08T20:18:57 IST" duration-ms="3543">
+    <groups>
+    </groups>
+    <test started-at="2022-07-08T20:18:54 IST" name="Default test" finished-at="2022-07-08T20:18:57 IST" duration-ms="3543">
+      <class name="test.TestTravelInsurancePage">
+        <test-method signature="openPage()[pri:0, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:54 IST" name="openPage" finished-at="2022-07-08T20:18:55 IST" duration-ms="1484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPage -->
+        <test-method signature="clickTravelInsurance()[pri:1, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:55 IST" name="clickTravelInsurance" finished-at="2022-07-08T20:18:57 IST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTravelInsurance -->
+        <test-method signature="enterRightDestination()[pri:2, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="enterRightDestination" finished-at="2022-07-08T20:18:57 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterRightDestination -->
+        <test-method signature="selectRightDestination()[pri:3, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="selectRightDestination" finished-at="2022-07-08T20:18:57 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRightDestination -->
+        <test-method signature="enterWrongDestination()[pri:4, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="enterWrongDestination" finished-at="2022-07-08T20:18:57 IST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterWrongDestination -->
+        <test-method signature="selectWrongDestination()[pri:5, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="selectWrongDestination" finished-at="2022-07-08T20:18:57 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectWrongDestination -->
+        <test-method signature="enterDigitsDestination()[pri:6, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="enterDigitsDestination" finished-at="2022-07-08T20:18:57 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDigitsDestination -->
+        <test-method signature="enterEmptyDestination()[pri:7, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="enterEmptyDestination" finished-at="2022-07-08T20:18:57 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterEmptyDestination -->
+        <test-method signature="openTravelDurationTab()[pri:8, instance:test.TestTravelInsurancePage@119aa36]" started-at="2022-07-08T20:18:57 IST" name="openTravelDurationTab" finished-at="2022-07-08T20:18:57 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openTravelDurationTab -->
+      </class> <!-- test.TestTravelInsurancePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

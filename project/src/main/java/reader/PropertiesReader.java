@@ -24,9 +24,13 @@ public class PropertiesReader {
 	 * @return
 	 */
 	public String fetchBrowserName() {
-		return prop.getProperty("browser");
+		return prop.getProperty("browserName");
 	}
 	
+	public String fetchProperty(String key)
+	{
+		return prop.getProperty(key);
+	}
 	/**
 	 * getting explicit wait from config.properties file
 	 * @return

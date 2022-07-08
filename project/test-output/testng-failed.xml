@@ -5,7 +5,7 @@
     <classes>
       <class name="test.TestTravelInsurancePage">
         <methods>
-          <include name="openPage"/>
+          <include name="selectRightDestination"/>
         </methods>
       </class> <!-- test.TestTravelInsurancePage -->
     </classes>

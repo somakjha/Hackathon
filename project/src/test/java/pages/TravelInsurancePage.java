@@ -2,16 +2,21 @@ package pages;
 
 
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class TravelInsurancePage {
     
+	Date date = new Date();
+	int today = date.getDate();
 	
 	@FindBy(xpath = "/html/body/main/div[2]/section/div[7]")
 	WebElement travelInsurance;
@@ -31,10 +36,23 @@ public class TravelInsurancePage {
 	@FindBy(className = "pqHeading__subTitle")
 	WebElement travelDurationText;
 	
+	@FindBy(className = "MuiInputBase-input")
+	WebElement calendarPath;
 	
+	@FindBy(xpath = "//*[@id=\"prequote-wrapper\"]/div[2]/div/div[1]/div[1]/div[2]/label")
+	WebElement countTraveller;
+     
+	@FindBy(xpath = "/html/body/section/div[2]/div[3]/div[2]/div/div[1]/div[2]/div[1]/div/select")
+	WebElement travellerOneAge;
 	
+	@FindBy(xpath = "/html/body/section/div[2]/div[3]/div[2]/div/div[1]/div[2]/div[2]/div/select")
+	WebElement travellerTwoAge;
 	
-
+	By startDate = By.xpath("//span[text()="+today+"]");
+	By endDate = By.xpath("//span[text()="+(today+7)+"]");
+	
+	Select select = null;
+	
 	WebDriver driver = null;
 	public TravelInsurancePage(WebDriver driver) {
 		this.driver = driver;
@@ -85,6 +103,23 @@ public class TravelInsurancePage {
 	public String getTravelDurationText()
 	{
 		return travelDurationText.getText();
+	}
+	public void popCalendar()
+	{
+		calendarPath.click();
+		driver.findElement(startDate).click();
+		driver.findElement(endDate).click();
+	}
+	public void clickTravellerCount()
+	{
+		countTraveller.click();
+	}
+	public void setAge(String age1,String age2)
+	{
+		select = new Select(travellerOneAge);
+		select.selectByValue(age1);
+		select = new Select(travellerTwoAge);
+		select.selectByValue(age2);
 	}
 
 	

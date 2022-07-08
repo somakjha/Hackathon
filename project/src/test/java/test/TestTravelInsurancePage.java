@@ -73,5 +73,16 @@ public class TestTravelInsurancePage {
 		Obj.clickNextButton();
 		Assert.assertEquals("Don't worry you can change your trip dates at a later stage", Obj.getTravelDurationText());
 	}
-	
+	@Test(priority = 9)
+	public void setDuration()
+	{
+		Obj.popCalendar();
+	}
+	@Test(priority = 10)
+	public void openTravellerPage()
+	{
+		Obj.clickNextButton();
+		Obj.clickTravellerCount();
+		Obj.setAge("17", "17");
+	}
 }

@@ -13,9 +13,10 @@ public class BrowserHandler {
 	 * handling multiple browsers
 	 * @return
 	 */
-	public WebDriver getWebDriver() {
+	public static WebDriver getWebDriver() {
 		PropertiesReader propertiesReader = new PropertiesReader();
 		String browserName = propertiesReader.fetchBrowserName();
+		System.out.println(browserName);
 		WebDriver driver = null;
 		
 		switch(browserName) {

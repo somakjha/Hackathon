@@ -24,7 +24,7 @@ public class PropertiesReader {
 	 * @return
 	 */
 	public String fetchBrowserName() {
-		return prop.getProperty("browser");
+		return prop.getProperty("browserName");
 	}
 	
 	/**

@@ -11,11 +11,5 @@ public class TravelInsurancePage {
 		TravelInsurancePage.driver = driver;
 	}
 	
-	public void test() {
-		System.out.println("lets go buddy");
-	}
-	public void call()
-	{
-		System.out.println("amay call uthaya kr bhai");
-	}
+	
 }

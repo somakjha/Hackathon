@@ -48,6 +48,19 @@ public class TravelInsurancePage {
 	@FindBy(xpath = "/html/body/section/div[2]/div[3]/div[2]/div/div[1]/div[2]/div[2]/div/select")
 	WebElement travellerTwoAge;
 	
+	@FindBy(id = "ped_no")
+	WebElement medicalNo;
+	
+	@FindBy(id = "mobileNumber")
+	WebElement mobileField;
+	
+	@FindBy(className = "errorMsg")
+	WebElement errorText;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/ul/li[7]/a")
+	WebElement filter;
+	
+	
 	By startDate = By.xpath("//span[text()="+today+"]");
 	By endDate = By.xpath("//span[text()="+(today+7)+"]");
 	
@@ -120,6 +133,30 @@ public class TravelInsurancePage {
 		select.selectByValue(age1);
 		select = new Select(travellerTwoAge);
 		select.selectByValue(age2);
+	}
+	public void selectNoMedical()
+	{
+		medicalNo.click();
+	}
+	public void clickMobileField()
+	{
+		mobileField.click();
+	}
+	public void clickOutsideMobileField()
+	{
+		travelDurationText.click();
+	}
+	public String getErrorMsg()
+	{
+		return errorText.getText();
+	}
+	public void enterMobileNo(String data)
+	{
+		mobileField.sendKeys(data);
+	}
+	public void clickFilter()
+	{
+		filter.click();
 	}
 
 	

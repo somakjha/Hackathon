@@ -66,7 +66,7 @@ public class TestTravelInsurancePage {
 		Assert.assertEquals(false, Obj.getNextState());
 	}
 	@Test(priority = 8)
-	public void openTravelDurationTab()
+	public void openTravelDurationPage()
 	{
 		Obj.enterDestination("Greece");
 		Obj.selectDestination();
@@ -84,5 +84,35 @@ public class TestTravelInsurancePage {
 		Obj.clickNextButton();
 		Obj.clickTravellerCount();
 		Obj.setAge("17", "17");
+	}
+	@Test(priority = 11)
+	public void openMedicalPage()
+	{
+		Obj.clickNextButton();
+	}
+	@Test(priority = 12)
+	public void openContactPage()
+	{
+		Obj.selectNoMedical();
+		Obj.clickNextButton();
+	}
+	@Test(priority = 13)             
+	public void viewPlanNoContact()
+	{
+		Obj.clickMobileField();
+		Obj.clickOutsideMobileField();
+		System.out.println(Obj.getErrorMsg());
+	}
+	@Test(priority = 14)
+	public void viewPlanPage()
+	{
+		Obj.clickMobileField();
+		Obj.enterMobileNo("9999999999");
+		Obj.clickNextButton();
+	}
+	@Test(priority = 15)
+	public void applyFilter()
+	{
+	   Obj.clickFilter();	
 	}
 }

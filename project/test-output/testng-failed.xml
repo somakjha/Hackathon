@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TestTravelInsurancePage">
+      <class name="test.TestCarInsurancePage">
         <methods>
-          <include name="selectRightDestination"/>
+          <include name="testCityIcon"/>
+          <include name="openPage"/>
+          <include name="testProceedButton"/>
+          <include name="setUpBrowser"/>
+          <include name="retrieveData"/>
         </methods>
-      </class> <!-- test.TestTravelInsurancePage -->
+      </class> <!-- test.TestCarInsurancePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

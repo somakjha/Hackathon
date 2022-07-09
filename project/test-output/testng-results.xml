@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+=======
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-07-09T16:45:04 IST" name="Default suite" finished-at="2022-07-09T16:45:13 IST" duration-ms="8524">
+=======
+  <suite started-at="2022-07-09T16:19:25 IST" name="Default suite" finished-at="2022-07-09T16:19:44 IST" duration-ms="19150">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2022-07-09T16:45:04 IST" name="Default test" finished-at="2022-07-09T16:45:13 IST" duration-ms="8524">
       <class name="test.TestCarInsurancePage">
         <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:test.TestCarInsurancePage@272113c4]" started-at="2022-07-09T16:45:04 IST" name="setUpBrowser" finished-at="2022-07-09T16:45:08 IST" duration-ms="3620" status="PASS">
@@ -12,16 +21,31 @@
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
         <test-method is-config="true" signature="openPage()[pri:0, instance:test.TestCarInsurancePage@272113c4]" started-at="2022-07-09T16:45:08 IST" name="openPage" finished-at="2022-07-09T16:45:10 IST" depends-on-methods="test.TestCarInsurancePage.setUpBrowser" duration-ms="2312" status="PASS">
+=======
+    <test started-at="2022-07-09T16:19:25 IST" name="Default test" finished-at="2022-07-09T16:19:44 IST" duration-ms="19150">
+      <class name="test.TestTravelInsurancePage">
+        <test-method signature="openPage()[pri:0, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:25 IST" name="openPage" finished-at="2022-07-09T16:19:27 IST" duration-ms="1948" status="PASS">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="retrieveData()[pri:0, instance:test.TestCarInsurancePage@272113c4]" started-at="2022-07-09T16:45:10 IST" name="retrieveData" finished-at="2022-07-09T16:45:10 IST" depends-on-methods="test.TestCarInsurancePage.openPage" duration-ms="2" status="PASS">
+=======
+        <test-method signature="clickTravelInsurance()[pri:1, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:27 IST" name="clickTravelInsurance" finished-at="2022-07-09T16:19:29 IST" duration-ms="1987" status="PASS">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- retrieveData -->
         <test-method signature="testCarInsuranceIcon()[pri:1, instance:test.TestCarInsurancePage@272113c4]" started-at="2022-07-09T16:45:10 IST" name="testCarInsuranceIcon" finished-at="2022-07-09T16:45:12 IST" duration-ms="1249" status="PASS">
+=======
+        </test-method> <!-- clickTravelInsurance -->
+        <test-method signature="enterRightDestination()[pri:2, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:29 IST" name="enterRightDestination" finished-at="2022-07-09T16:19:29 IST" duration-ms="119" status="PASS">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testCarInsuranceIcon -->
         <test-method signature="testProceedButton()[pri:2, instance:test.TestCarInsurancePage@272113c4]" started-at="2022-07-09T16:45:12 IST" name="testProceedButton" finished-at="2022-07-09T16:45:12 IST" duration-ms="521" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
@@ -95,8 +119,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+=======
+        </test-method> <!-- enterRightDestination -->
+        <test-method signature="selectRightDestination()[pri:3, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:29 IST" name="selectRightDestination" finished-at="2022-07-09T16:19:29 IST" duration-ms="248" status="PASS">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testProceedButton -->
         <test-method signature="testCityIcon()[pri:3, instance:test.TestCarInsurancePage@272113c4]" started-at="2022-07-09T16:45:12 IST" name="testCityIcon" finished-at="2022-07-09T16:45:13 IST" duration-ms="632" status="FAIL">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
@@ -168,10 +197,63 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+=======
+        </test-method> <!-- selectRightDestination -->
+        <test-method signature="enterWrongDestination()[pri:4, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:29 IST" name="enterWrongDestination" finished-at="2022-07-09T16:19:29 IST" duration-ms="170" status="PASS">
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- testCityIcon -->
       </class> <!-- test.TestCarInsurancePage -->
+=======
+        </test-method> <!-- enterWrongDestination -->
+        <test-method signature="selectWrongDestination()[pri:5, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:29 IST" name="selectWrongDestination" finished-at="2022-07-09T16:19:39 IST" duration-ms="10061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectWrongDestination -->
+        <test-method signature="enterDigitsDestination()[pri:6, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:39 IST" name="enterDigitsDestination" finished-at="2022-07-09T16:19:39 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDigitsDestination -->
+        <test-method signature="enterEmptyDestination()[pri:7, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:39 IST" name="enterEmptyDestination" finished-at="2022-07-09T16:19:40 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterEmptyDestination -->
+        <test-method signature="openTravelDurationPage()[pri:8, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:40 IST" name="openTravelDurationPage" finished-at="2022-07-09T16:19:40 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openTravelDurationPage -->
+        <test-method signature="setDuration()[pri:9, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:40 IST" name="setDuration" finished-at="2022-07-09T16:19:40 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setDuration -->
+        <test-method signature="openTravellerPage()[pri:10, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:40 IST" name="openTravellerPage" finished-at="2022-07-09T16:19:41 IST" duration-ms="750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openTravellerPage -->
+        <test-method signature="openMedicalPage()[pri:11, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:41 IST" name="openMedicalPage" finished-at="2022-07-09T16:19:41 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMedicalPage -->
+        <test-method signature="openContactPage()[pri:12, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:41 IST" name="openContactPage" finished-at="2022-07-09T16:19:42 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openContactPage -->
+        <test-method signature="viewPlanNoContact()[pri:13, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:42 IST" name="viewPlanNoContact" finished-at="2022-07-09T16:19:42 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewPlanNoContact -->
+        <test-method signature="viewPlanPage()[pri:14, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:42 IST" name="viewPlanPage" finished-at="2022-07-09T16:19:42 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewPlanPage -->
+        <test-method signature="applyFilter()[pri:15, instance:test.TestTravelInsurancePage@47b67fcb]" started-at="2022-07-09T16:19:42 IST" name="applyFilter" finished-at="2022-07-09T16:19:44 IST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyFilter -->
+      </class> <!-- test.TestTravelInsurancePage -->
+>>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

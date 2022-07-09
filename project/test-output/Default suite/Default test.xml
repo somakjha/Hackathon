@@ -136,4 +136,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
     </failure>
   </testcase> <!-- testCityIcon -->
+<testsuite ignored="0" hostname="DESKTOP-PFNGT10" failures="0" tests="16" name="Default test" time="19.15" errors="0" timestamp="2022-07-09T16:19:44 IST">
+  <testcase classname="test.TestTravelInsurancePage" name="openPage" time="1.948"/>
+  <testcase classname="test.TestTravelInsurancePage" name="clickTravelInsurance" time="1.987"/>
+  <testcase classname="test.TestTravelInsurancePage" name="enterRightDestination" time="0.119"/>
+  <testcase classname="test.TestTravelInsurancePage" name="selectRightDestination" time="0.248"/>
+  <testcase classname="test.TestTravelInsurancePage" name="enterWrongDestination" time="0.17"/>
+  <testcase classname="test.TestTravelInsurancePage" name="selectWrongDestination" time="10.061"/>
+  <testcase classname="test.TestTravelInsurancePage" name="enterDigitsDestination" time="0.181"/>
+  <testcase classname="test.TestTravelInsurancePage" name="enterEmptyDestination" time="0.052"/>
+  <testcase classname="test.TestTravelInsurancePage" name="openTravelDurationPage" time="0.338"/>
+  <testcase classname="test.TestTravelInsurancePage" name="setDuration" time="0.57"/>
+  <testcase classname="test.TestTravelInsurancePage" name="openTravellerPage" time="0.75"/>
+  <testcase classname="test.TestTravelInsurancePage" name="openMedicalPage" time="0.12"/>
+  <testcase classname="test.TestTravelInsurancePage" name="openContactPage" time="0.448"/>
+  <testcase classname="test.TestTravelInsurancePage" name="viewPlanNoContact" time="0.226"/>
+  <testcase classname="test.TestTravelInsurancePage" name="viewPlanPage" time="0.256"/>
+  <testcase classname="test.TestTravelInsurancePage" name="applyFilter" time="1.595"/>
 </testsuite> <!-- Default test -->

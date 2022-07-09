@@ -115,4 +115,10 @@ public class TestTravelInsurancePage {
 	{
 	   Obj.clickFilter();	
 	}
+	@Test(priority = 16)
+	public void applySort()
+	{
+	   Obj.clickSort();	
+	}
+	
 }

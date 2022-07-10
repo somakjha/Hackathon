@@ -36,11 +36,11 @@ public class TestTravelInsurancePage {
 	}
 
 	@Test(priority = 3)
-	public void selectRightDestination(){
+	public void selectRightDestination() {
 		Obj.selectDestination();
 		Obj.clearSearchTag();
 	}
-    
+
 	@Test(priority = 4)
 	public void enterWrongDestination() {
 		Obj.enterDestination("Greefffce");
@@ -51,74 +51,97 @@ public class TestTravelInsurancePage {
 		Obj.selectDestination();
 		Obj.clearSearchText();
 	}
-	
+
 	@Test(priority = 6)
-	public void enterDigitsDestination()
-	{
+	public void enterDigitsDestination() {
 		Obj.enterDestination("7209");
 		Assert.assertEquals(false, Obj.getNextState());
 	}
-	
+
 	@Test(priority = 7)
-	public void enterEmptyDestination()
-	{
+	public void enterEmptyDestination() {
 		Obj.enterDestination("");
 		Assert.assertEquals(false, Obj.getNextState());
 	}
+
 	@Test(priority = 8)
-	public void openTravelDurationPage()
-	{
+	public void openTravelDurationPage() {
 		Obj.enterDestination("Greece");
 		Obj.selectDestination();
 		Obj.clickNextButton();
 		Assert.assertEquals("Don't worry you can change your trip dates at a later stage", Obj.getTravelDurationText());
 	}
+
 	@Test(priority = 9)
-	public void setDuration()
-	{
+	public void setDuration() {
 		Obj.popCalendar();
 	}
+
 	@Test(priority = 10)
-	public void openTravellerPage()
-	{
+	public void openTravellerPage() {
 		Obj.clickNextButton();
 		Obj.clickTravellerCount();
 		Obj.setAge("17", "17");
 	}
+
 	@Test(priority = 11)
-	public void openMedicalPage()
-	{
+	public void openMedicalPage() {
 		Obj.clickNextButton();
 	}
+
 	@Test(priority = 12)
-	public void openContactPage()
-	{
+	public void openContactPage() {
 		Obj.selectNoMedical();
 		Obj.clickNextButton();
 	}
-	@Test(priority = 13)             
-	public void viewPlanNoContact()
-	{
+
+	@Test(priority = 13)
+	public void viewPlanNoContact() {
 		Obj.clickMobileField();
 		Obj.clickOutsideMobileField();
 		System.out.println(Obj.getErrorMsg());
 	}
+
 	@Test(priority = 14)
-	public void viewPlanPage()
-	{
+	public void viewPlanPage() {
 		Obj.clickMobileField();
 		Obj.enterMobileNo("9999999999");
 		Obj.clickNextButton();
 	}
+
 	@Test(priority = 15)
-	public void applyFilter()
-	{
-	   Obj.clickFilter();	
+	public void applyFilter() {
+		Obj.clickFilter();
 	}
+
 	@Test(priority = 16)
-	public void applySort()
-	{
-	   Obj.clickSort();	
+	public void applySort() {
+		Obj.clickSort();
 	}
+
+	@Test(priority = 17)
+	public void getCardName() {
 	
+		Obj.getCardName();
+		
+		
+	}
+	@Test(priority = 18)
+	public void getCardPrice() {
+	
+		Obj.getCardPrice();
+		
+	}
+	@Test(priority = 19)
+	public void getInfo() {
+	
+		Obj.getInfo();
+		
+	}
+	@Test(priority = 20)
+	public void tearDown()
+	{
+		driver.close();
+	}
+
 }

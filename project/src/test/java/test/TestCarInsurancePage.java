@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -28,6 +29,11 @@ public class TestCarInsurancePage {
 	@BeforeTest(dependsOnMethods="openPage")
 	public void retrieveData() {
 		ci.getData();
+	}
+	@AfterTest
+	public void tearDown()
+	{
+		driver.close();
 	}
 	
 	@Test(priority=1)
@@ -117,6 +123,7 @@ public class TestCarInsurancePage {
 	public void testGetEmailErrorMessage() {
 		String emailError = ci.captureErrorMessageForEmail();
 		Assert.assertEquals(emailError, "Please enter a valid e-mail ID.");
+		System.out.println(emailError);
 	}
 	
 	

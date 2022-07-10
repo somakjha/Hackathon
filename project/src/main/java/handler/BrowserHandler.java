@@ -18,7 +18,7 @@ public class BrowserHandler {
 	public static WebDriver getWebDriver() {
 		PropertiesReader propertiesReader = new PropertiesReader();
 		String browserName = propertiesReader.fetchBrowserName();
-		System.out.println(browserName);
+//		System.out.println(browserName);
 		WebDriver driver = null;
 		
 		switch(browserName) {

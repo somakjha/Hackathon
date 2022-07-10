@@ -101,8 +101,13 @@ public class TestHealthInsurancePage {
 	public void checkNoDisease() {
 		hi.checkWithNoDisease();
 	}
-
+	
 	@Test(priority = 14)
+	public void checkAnyDisease() {
+		//hi.checkWithNoDisease();
+	}
+
+	@Test(priority = 15)
 	public void getPlansInfo() {
 		List<String> list = hi.gettingPlans();
 

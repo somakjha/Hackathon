@@ -6,6 +6,8 @@ import java.util.Date;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import handler.BrowserHandler;
@@ -19,9 +21,15 @@ public class TestTravelInsurancePage {
 	PropertiesReader propReader = new PropertiesReader();
 	TravelInsurancePage Obj = new TravelInsurancePage(driver);
 
-	@Test(priority = 0)
+	@BeforeTest()
 	public void openPage() {
 		Obj.openPage(propReader.fetchProperty("url"));
+	}
+	
+	@AfterTest
+	public void tearDown()
+	{
+		driver.close();
 	}
 
 	@Test(priority = 1)
@@ -139,10 +147,6 @@ public class TestTravelInsurancePage {
 		Obj.getInfo();
 		
 	}
-	@Test(priority = 20)
-	public void tearDown()
-	{
-		driver.close();
-	}
+	
 
 }

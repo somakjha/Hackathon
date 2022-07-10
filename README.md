@@ -3,7 +3,7 @@
 ## Find travel insurance plan for students
 ### Problem Statement : Find travel insurance plan for students
 
-### This project is build to extract the Insurance Details of various type of insurances like Travel Insurance, Health Insurance, Car insurance.
+### This project is build to extract the Insurance Details of various type of Insurances like Travel Insurance, Health Insurance, Car Insurance.
 
 *Prerequisites*:
 **Selenium WebDriver**,

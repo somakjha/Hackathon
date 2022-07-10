@@ -1,7 +1,9 @@
 package pages;
 
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,6 +12,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
@@ -17,6 +20,8 @@ public class TravelInsurancePage {
     
 	Date date = new Date();
 	int today = date.getDate();
+	String[] arr2 = new String[5];
+	String[] arr = new String[5];
 	
 	@FindBy(xpath = "/html/body/main/div[2]/section/div[7]")
 	WebElement travelInsurance;
@@ -65,6 +70,12 @@ public class TravelInsurancePage {
 	
 	@FindBy(id = "low")
 	WebElement lowToHigh;
+	
+	@FindBy(xpath = "//div[@class='quotesCard__planName hideSmall']//p[@class='quotesCard--insurerName']")
+	List<WebElement> cardNameElements;
+	
+	@FindBy(xpath = "//div[@class='quotesCard__cta']/p/span")
+	List<WebElement> cardPriceElements;
 	
 	By startDate = By.xpath("//span[text()="+today+"]");
 	By endDate = By.xpath("//span[text()="+(today+7)+"]");
@@ -166,8 +177,33 @@ public class TravelInsurancePage {
 	public void clickSort()
 	{
 		sortBy.click();
+		lowToHigh.click();
+		nextButton.click();
 	}
-
+	public void getCardName()
+	{
+		for(int i=0;i<3;i++)
+		{
+			arr2[i] = (String) cardNameElements.get(i).getText();
+		}	
+	}
+	public void getCardPrice()
+	{
+		for(int i=0;i<3;i++)
+		{
+			arr[i] = (String) cardPriceElements.get(i).getText();
+		}
+	}
+	public void getInfo()
+	{
+		String info = "";
+		for(int i=0;i<3;i++)
+		{
+			info = arr2[i]+" INR"+arr[i].substring(1);
+			System.out.println(info);
+		}
+	}
+    
 	
 	
 }

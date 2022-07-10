@@ -50,7 +50,7 @@ public class HealthInsurancePage {
 	}
 
 	public void writeName() {
-		driver.findElement(fullName).sendKeys("dummy");
+		driver.findElement(fullName).sendKeys("Rani");
 	}
 
 	public void writeNumber() {

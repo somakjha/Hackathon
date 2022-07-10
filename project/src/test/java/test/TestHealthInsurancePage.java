@@ -20,7 +20,7 @@ public class TestHealthInsurancePage {
 	public HealthInsurancePage hi = null;
 
 	@BeforeTest
-	public void setUpBrowser() throws UnknownHostException {
+	public void setUpBrowser(){
 		driver = BrowserHandler.getWebDriver();
 		hi = new HealthInsurancePage(driver);
 	}

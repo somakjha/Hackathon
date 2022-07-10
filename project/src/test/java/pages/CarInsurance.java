@@ -20,15 +20,14 @@ public class CarInsurance {
 	}
 	
 	By carInsuranceIcon = By.xpath("//div[@class='shadowHandlerBox']//i[@class='icon-bg homeIconsBg car-insurance']");
-	By proceedLink = By.linkText("Proceed without car number");
+	By proceedLink = By.xpath("//a[@class='btn-proceed']");
 	By city = By.id("spn6"); // for giving dummy details for city as "PUNE"
 	By districtCode = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/div[2]/ul[1]/li[2]/span[1]");// for district code
 	By searchBarCity = By.xpath("//input[@placeholder='Search RTO (e.g. MH02 or Mumbai)']");
 	By searchBarCarCompany = By.xpath("//input[@placeholder='Search car brand']");
-	By carIcon = By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/div[1]/li[1]/span[1]"); // dummy details
+	By carIcon = By.xpath("//span[@class='tata']"); // dummy details
 	By searchBarCarModel = By.xpath("//input[@placeholder='Search TATA model']");
-	By modelIcon = By.xpath(
-			"/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/div[1]/li[3]/span[1]/b[1]");
+	By modelIcon = By.xpath("//*[text()='NEXON']");
 	By fuelType = By.id("Diesel");
 	By variantSearchBar = By.xpath("//input[@placeholder='Search Diesel variant']");
 	By allVariants = By.xpath("//li[text()='All variants']");
@@ -120,11 +119,11 @@ public class CarInsurance {
 	}
 	
 	public void writeEmail() {
-		driver.findElement(email).sendKeys("345345");
+		driver.findElement(email).sendKeys("amay.234@wys");
 	}
 	
 	public void writePhoneNumber() {
-		driver.findElement(phone).sendKeys("amehuede");
+		driver.findElement(phone).sendKeys("9589173046");
 	}
 	
 	public void clickViewPrices() {
@@ -141,6 +140,23 @@ public class CarInsurance {
 		return errorMessage;
 	}
 	
+	public void clearDetails() {
+		driver.findElement(fullName).clear();
+		driver.findElement(email).clear();
+		driver.findElement(phone).clear();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void writeValidDetails() {
+		driver.findElement(fullName).sendKeys("amay");
+		driver.findElement(email).sendKeys("amay.2308@gmail.com");
+		driver.findElement(phone).sendKeys("9589173046");
+	}
 	
 
 }

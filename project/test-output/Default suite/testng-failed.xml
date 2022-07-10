@@ -5,16 +5,10 @@
     <classes>
       <class name="test.TestCarInsurancePage">
         <methods>
-<<<<<<< HEAD
-          <include name="testCityIcon"/>
+          <include name="testGetPhoneErrorMessage"/>
           <include name="openPage"/>
-          <include name="testProceedButton"/>
           <include name="setUpBrowser"/>
           <include name="retrieveData"/>
-=======
-          <include name="applyFilter"/>
-          <include name="selectRightDestination"/>
->>>>>>> branch 'master' of https://github.com/somakjha/Hackathon.git
         </methods>
       </class> <!-- test.TestCarInsurancePage -->
     </classes>

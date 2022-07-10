@@ -60,6 +60,11 @@ public class TravelInsurancePage {
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/ul/li[7]/a")
 	WebElement filter;
 	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/ul/li[7]/div/div/div[2]/div[1]/ul/li[2]")
+	WebElement sortBy;
+	
+	@FindBy(id = "low")
+	WebElement lowToHigh;
 	
 	By startDate = By.xpath("//span[text()="+today+"]");
 	By endDate = By.xpath("//span[text()="+(today+7)+"]");
@@ -157,6 +162,10 @@ public class TravelInsurancePage {
 	public void clickFilter()
 	{
 		filter.click();
+	}
+	public void clickSort()
+	{
+		sortBy.click();
 	}
 
 	

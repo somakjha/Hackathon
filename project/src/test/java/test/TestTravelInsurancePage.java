@@ -44,6 +44,7 @@ public class TestTravelInsurancePage {
 	@Test(priority = 4)
 	public void enterWrongDestination() {
 		Obj.enterDestination("Greefffce");
+		Assert.assertEquals(false, Obj.getNextState());
 	}
 
 	@Test(priority = 5)

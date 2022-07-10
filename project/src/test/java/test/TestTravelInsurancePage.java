@@ -32,18 +32,18 @@ public class TestTravelInsurancePage {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1)//open travel insurance page
 	public void clickTravelInsurance() {
 		Obj.clickTravelInsurance();
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2)//locate and enter right destination
 	public void enterRightDestination() {
 		Obj.enterDestination("Greece");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3)//select a destination
 	public void selectRightDestination() {
 		Obj.selectDestination();
 		Obj.clearSearchTag();

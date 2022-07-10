@@ -10,10 +10,5 @@
 **TestNG Framework**,
 
 
-*Credits*<br />
-Amay Atre<br />
-Somak Jha<br />
-Oguri Numitha Devi<br />
-Meghana Upendram<br />
-Prashant Singh<br />
-Kundan Srivastava<br />
+*Credits*:<br />
+Amay, Somak, Numitha, Meghana, Prashant, Kundan

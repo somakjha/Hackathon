@@ -18,7 +18,7 @@ public class HealthInsurancePage {
 	By gender = By.xpath("//i[@class='gender female']");
 	By fullName = By.id("fullname");
 	By phone = By.id("pmobile");
-	By continueBtn = By.xpath("//button[@type='submit']");
+	By continueBtn = By.xpath("//*[@id=\"form1\"]/form/div[2]/button");
 	By selectAge = By.xpath("//select[@id='Self']");
 	By city = By.id("txtcity");
 	By noDiseaseCheckbox = By.id("ped_last");
@@ -50,7 +50,7 @@ public class HealthInsurancePage {
 	}
 
 	public void writeName() {
-		driver.findElement(fullName).sendKeys("Rani");
+		driver.findElement(fullName).sendKeys("Amay");
 	}
 
 	public void writeNumber() {
@@ -68,7 +68,7 @@ public class HealthInsurancePage {
 
 	public void selectEldestAge() { // select 100
 		select = new Select(driver.findElement(selectAge));
-		select.selectByVisibleText("100 yr");
+		select.selectByVisibleText("59 yr");
 	}
 
 	public void checkCityBoxFromCityName() {
